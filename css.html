@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Makanan Khas Indonesia</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container h1 {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #40513B;
+        }
+
+        /* CSS untuk nav bar */
+        nav {
+            border-radius: 20px;
+            background-color: #609966;
+            overflow: hidden;
+            flex: 1;
+            width: 350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            align-items: center;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            float: left;
+            color: #EDF1D6;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+
+        }
+
+        nav a:hover {
+            background-color: #EDF1D6;
+            color: #40513B;
+        }
+
+        /* CSS untuk card */
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 50px;
+            flex: 1;
+        }
+
+
+        .card h2 {
+            color: black;
+            font-size: 24px;
+        }
+
+        .card p {
+            color: grey;
+            font-size: 18px;
+        }
+
+        .card img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+
+            background-color: #609966;
+            color: #EDF1D6;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn:hover {
+            background-color: #EDF1D6;
+            color: #40513B;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+        <h1>Makanan Indonesia</h1>
+        <!-- Nav bar -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://www.bango.co.id/gfx/recipes/temp_thumb-1658299943.jpg" alt="Rendang">
+            <h2>Rendang</h2>
+            <p>Rendang atau Randang/Rondang dalam bahasa Minangkabau adalah Masakan Minangkabau yang berbahan dasar
+                daging yang berasal dari Sumatera Barat, Indonesia.</p>
+            <a class="btn">Lihat Selengkapnya</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://cdn1-production-images-kly.akamaized.net/KxuztQKl3tnUN0Fw5iAwKsnX_u0=/0x148:1920x1230/640x360/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3093328/original/069244600_1585909700-fried-2509089_1920.jpg"
+                alt="Nasi Goreng">
+            <h2>Nasi Goreng</h2>
+            <p>Nasi goreng adalah makanan yang terbuat dari nasi yang digoreng bersama bumbu-bumbu seperti kecap, bawang
+                putih, bawang merah, dan cabai. Nasi goreng sering disajikan dengan telur mata sapi, ayam, atau udang
+                sebagai tambahan.</p>
+            <a class="btn">Lihat Selengkapnya</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

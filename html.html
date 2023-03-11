@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #EEE9DA;
+            height: 50px;
+            padding: 0 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        .menu li {
+            margin-left: 10px;
+        }
+
+        .menu li:first-child {
+            margin-left: 0;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .menu a:hover {
+            background-color: #fff;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        .card {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 50px;
+            margin-top: 40px;
+            padding: 30px 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        }
+
+        .card-image {
+            flex: 0 0 150px;
+            padding: 20px;
+
+        }
+
+        .card-image img {
+            width: 100%;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .card-content {
+            flex: 1;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .card-content h2 {
+
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .card-content p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .card-buttons {
+            display: flex;
+        }
+
+        .card-buttons button {
+
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-right: 10px;
+            Margin-top: 10PX;
+        }
+
+        .card-buttons button:first-child {
+
+            background-color: #333;
+            color: #fff;
+        }
+
+        .card-buttons button:first-child:hover {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid#333;
+        }
+
+        .card-buttons button:last-child {
+            margin-right: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid#333;
+        }
+
+        .card-buttons button:last-child:hover {
+
+            background-color: #EEE9DA;
+            color: #333;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+
+        .biodata {
+            border-left: 1px solid;
+            padding: 10px 15px;
+            width: 500px;
+            margin-right: 450px;
+            margin-left: 20px;
+        }
+
+        .tdbio {
+            padding-left: 20px;
+
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 1350px;
+
+
+        }
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #fffF;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+    </Style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Inventory</a></li>
+        </ul>
+    </nav>
+    <div class="card">
+        <div class="card-image">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="Profile Picture">
+        </div>
+        <div class="card-content">
+            <h2>Muhammad Rizki Erlangga Putra</h2>
+            <p>Front End</p>
+            <div class="card-buttons">
+                <button>Kontak</button>
+                <button>Resume</button>
+            </div>
+        </div>
+
+        <table class="biodata">
+            <tr>
+                <td class="tdbio">Availabillity</td>
+                <td>: Full Time</td>
+            </tr>
+            <tr>
+                <td class="tdbio">Age</td>
+                <td>: 21</td>
+            </tr>
+            <tr>
+                <td class="tdbio">Location</td>
+                <td>: Surabaya, Indonesia</td>
+            </tr>
+            <tr>
+                <td class="tdbio">Years Experience</td>
+                <td>: 2</td>
+            </tr>
+            <tr>
+                <td class="tdbio">Email</td>
+                <td>: erlangga5a@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    <div class="card">
+        <div class="form-card">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <input type="text" id="role" name="role" required>
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability:</label>
+                    <input type="text" id="availability" name="availability" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
